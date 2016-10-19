@@ -16,7 +16,8 @@
             <label for="personname">Write your name here:</label>
             <input id="personname" class="form-control" type="text">
           </div>
-          
+
+          <p><em>Select your favorite bevvy:</em></p>
           <select class="form-control" id="beverage">
             <option>Coffee</option>
             <option>Tea</option>
@@ -24,20 +25,27 @@
             <option>Water</option>
           </select>
 
-          <div class="form-group">
-            <label for="starttime">Write your preferred start time here:</label>
-            <input id="starttime" class="form-control" type="text">
+          <p><em>Click on your favorite type of music:</em></p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Rock" checked>
+              Rock
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Pop">
+              Pop
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Country">
+              Country
+            </label>
           </div>
 
-          <div class="form-group">
-            <label for="color">What is your favorite color?</label>
-            <input id="color" class="form-control" type="color">
-          </div>
 
-          <div class="form-group">
-            <label for="endtime">Write your preferred end date here:</label>
-            <input id="endtime" class="form-control" type="text">
-          </div>
 
           <div id="bookinginfo">
 
@@ -53,8 +61,8 @@
         <h2>Appointment Confirmation once submitted:</h2>
         <p>Name:</p><span class="personname"></span>
         <p>Favorite Beverage:</p><span class="beverage"></span>
-        <p>Start Time:</p><span class="starttime"></span>
-        <p>End Time:</p><span class="endtime"></span>
+        <p>Favorite Music:</p><span class="music"></span>
+        
       </div>
     </div>
   </body>

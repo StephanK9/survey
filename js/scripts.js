@@ -2,15 +2,15 @@ $(document).ready(function() {
   $("#blanks form").submit(function(event) {
     var personnameInput = $("input#personname").val();
     var beverage = $("#beverage").val();
-    var starttimeInput = $("input#starttime").val();
-    var endtimeInput = $("input#endtime").val();
-    var favoriteColor = $("#color").val();
+    var music = $("input:radio[name=music]:checked").val();
+
 
 
     $(".personname").text(personnameInput);
-    $(".starttime").text(starttimeInput);
+    $(".music").text(music);
     $(".endtime").text(endtimeInput);
     $(".beverage").text(beverage);
+    
 
 
 
